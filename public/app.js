@@ -1,4 +1,5 @@
-// add the document selectors and logic for display on DOM
+// add the document selectors and logic for display on DOM - this page grabs articles 
+// on-click and uses ajax (jquery tool) to query api and render results on page
 $(document).ready(function() {
   const $scrapeIt = $("#scrapeIt");
   const $openSavedNotes = $(".openNotes");

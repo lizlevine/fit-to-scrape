@@ -19,13 +19,14 @@ module.exports = function(app) {
           .find(".img-sized__img")
           .attr("src");
 
-        // result.description = $(this)
-        //   .find(".newsblock-story-card__description")
-        //   .text()
-        //   .trim();
+        result.description = "";
+        // .find(".newsblock-story-card__description")
+        // .text()
+        // .trim();
         result.link = $(this)
           .children("a")
           .attr("href");
+        console.log(result);
 
         db.Article.create(result)
           .then(function(dbArticle) {
@@ -43,15 +44,19 @@ module.exports = function(app) {
 
   // Route for getting all Articles from the db
   app.get("/articles", function(req, res) {
+    // getting docs articles collection
     db.Article.find({})
       .sort({ _id: -1 })
       .limit(24)
       .populate("note")
+      // after promise completed, passing result into the cb function
       .then(function(dbArticle) {
+        // cb fct below, creating a new object called allArticles, inside obj, creating properties
+        // value or result - allArt object is being passed in to render
         let allArticles = {
           articles: dbArticle
         };
-
+        console.log(dbArticle);
         res.render("index", allArticles);
       })
       .catch(function(err) {
