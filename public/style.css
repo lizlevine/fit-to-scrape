@@ -37,6 +37,17 @@ h3 {
 .btn {
   border-radius: 0%;
   background-color: lightseagreen;
+  margin: 15px;
+  border: solid 1px lightgrey;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: black;
+}
+
+.btn:active {
 }
 
 .fa-trash {
