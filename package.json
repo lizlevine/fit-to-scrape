@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/lizlevine/fit-to-scrape/issues"
   },
-  "homepage": "https://github.com/lizlevine/fit-to-scrape#readme"
+  "homepage": "https://github.com/lizlevine/fit-to-scrape#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.9.5",
+    "morgan": "^1.9.1"
+  }
 }

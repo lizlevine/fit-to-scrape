@@ -1,0 +1,82 @@
+h3 {
+  font-size: 14px;
+}
+
+.eb-description {
+  font-size: 12px;
+}
+
+.eb-hidden {
+  display: none;
+}
+
+.noteList {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  /* width: 100px; */
+}
+
+.noteGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eb-title {
+  font-family: "Timmana", sans-serif;
+  /* font-family: "Seymour One", sans-serif; */
+  padding-top: 10px;
+}
+
+#huff {
+  font-size: xx-large;
+}
+
+.btn {
+  border-radius: 0%;
+  background-color: lightseagreen;
+}
+
+.fa-trash {
+  cursor: pointer;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: lightseagreen;
+}
